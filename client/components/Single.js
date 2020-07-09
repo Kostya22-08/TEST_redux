@@ -12,7 +12,11 @@ const Single = React.createClass({
       <div className="single">
         <Photo i={i} post={post} {...this.props} />
         {post.text}
-        <Comments postComments={postComments} {...this.props} />
+        <div className="comments">
+          {this.props.comments.map((comment, index) => (
+            <Comments postComments={postComments} index={index} comment={comment} {...this.props} />
+          ))}
+        </div>
       </div>
     );
   }

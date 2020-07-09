@@ -1,5 +1,4 @@
-const comments = {
-  HelloWorld: [
+const comments = [
     {
       id: "1",
       text: "Hello World",
@@ -41,7 +40,6 @@ const comments = {
       text: "Lerem Ipsum.... Hi",
       user: "Bob"
     }
-  ]
-};
+  ];
 
 export default comments;
